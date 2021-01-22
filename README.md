@@ -1,6 +1,6 @@
 [[中文版]](README_cn.md)
 
-![v1 v2](asserts/v1 v2.png)
+![v2](asserts/v2.png)
 
 This project is developed using Tuya SDK,which enables you to quickly develop branded apps connecting and controlling smart scenarios of many devices.
 
