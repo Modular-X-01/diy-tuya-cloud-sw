@@ -2,7 +2,7 @@
 
 # 彩云朵朵
 
-![v1 v2](asserts\v1 v2.png)
+![v1 v2](asserts/v1 v2.png)
 
 这个项目是使用涂鸦 SDK开发的，它使您能够快速开发连接和控制多种设备的智能场景的APP。
 
@@ -40,9 +40,9 @@ VS Code + PlatformIO + Arduino
 
 ## 截图
 
-![3](asserts\3.png)
+![3](asserts/3.png)
 
-![2](asserts\2.png)
+![2](asserts/2.png)
 
 
 
