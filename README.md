@@ -18,7 +18,7 @@ For more information,please check [Tuya Developer Website](https://developer.tuy
 
 ## Video
 
-
+[BiliBIli](https://space.bilibili.com/204526879)
 
 
 
