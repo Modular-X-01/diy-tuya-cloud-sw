@@ -107,6 +107,8 @@ void setup()
 
     delay(1000);
     pixels.clear(); // Set all pixel colors to 'off'
+    delay(100);
+    pixels.clear(); // Set all pixel colors to 'off'
 }
 uint32_t t_old, t_current;
 void loop()
@@ -168,8 +170,8 @@ void loop()
 }
 void dispColor()
 {
-    uint32_t delay_ms_indoor = 50;
-    uint32_t delay_ms_outdoor = 50;
+    uint32_t delay_ms_indoor = 60;
+    uint32_t delay_ms_outdoor = 60;
     // if(temp_indoor)
     uint16_t hue_indoor = map(temp_indoor / 10, -10, 40, 43690, 0);
     uint16_t hue_outdoor = map(temp_outdoor, -10, 40, 43690, 0);
@@ -193,33 +195,12 @@ void dispColor()
     if (current - old_indoor >= delay_ms_indoor)
     {
         old_indoor = current;
-        if (direction_indoor == 0)
-        {
 
-            val_indoor += speed_indoor;
-            if (val_indoor >= 250)
-            {
-                val_indoor = 250;
-                direction_indoor = 1;
-            }
-        }
-        else
-        {
-            if (val_indoor > (speed_indoor + 5))
-            {
-                val_indoor -= speed_indoor;
-            }
-            else
-            {
-                val_indoor = speed_indoor + 5;
-                direction_indoor = 0;
-            }
-        }
-
-        uint32_t color_indoor = pixels.ColorHSV(hue_indoor, 255, val_indoor);
+        val_indoor += speed_indoor;
+        uint32_t color_indoor = pixels.ColorHSV(hue_indoor, 255, pixels.sine8(val_indoor));
 
         //为不同区域显示颜色
-        for (uint8_t i = 0; i < NUM_INDOOR; i++)
+        for (uint8_t i = 1; i < NUM_INDOOR; i++)
         {
             pixels.setPixelColor(i, color_indoor);
         }
@@ -227,30 +208,9 @@ void dispColor()
         // tft.setCursor(0, 100);
         // tft.printf("in: %d,%d", hue_indoor, val_indoor);
 
-        if (direction_outdoor == 0)
-        {
+        val_outdoor += speed_outdoor;
 
-            val_outdoor += speed_outdoor;
-            if (val_outdoor >= 250)
-            {
-                val_outdoor = 250;
-                direction_outdoor = 1;
-            }
-        }
-        else
-        {
-            if (val_outdoor > (speed_outdoor + 5))
-            {
-                val_outdoor -= speed_outdoor;
-            }
-            else
-            {
-                val_outdoor = speed_outdoor + 5;
-                direction_outdoor = 0;
-            }
-        }
-
-        uint32_t color_outdoor = pixels.ColorHSV(hue_outdoor, 255, val_outdoor);
+        uint32_t color_outdoor = pixels.ColorHSV(hue_outdoor, 255, pixels.sine8(val_outdoor));
         for (uint8_t i = NUM_INDOOR; i < (NUM_INDOOR + NUM_OUTDOOR); i++)
         {
             pixels.setPixelColor(i, color_outdoor);
