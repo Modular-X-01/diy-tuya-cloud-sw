@@ -4,6 +4,8 @@
 
 ![v2](asserts/v2.png)
 
+![anim](asserts/anim.gif)
+
 这个项目是使用涂鸦 SDK开发的，它使您能够快速开发连接和控制多种设备的智能场景的APP。
 
 欲了解更多信息，请查看[涂鸦开发者网站](https://developer.tuya.com/)。
@@ -20,7 +22,7 @@
 
 ## 视频
 
-[BiliBili](https://space.bilibili.com/204526879)
+[BiliBili](https://www.bilibili.com/video/BV18K4y1p78z)
 
 
 
@@ -50,6 +52,15 @@ VS Code + PlatformIO + Arduino
 
 ![2](asserts/2.png)
 
+![4](asserts/4.jpg)
+
+![5](asserts/5.jpg)
+
+![6](asserts/6.jpg)
+
+![7](asserts/7.jpg)
+
+![8](asserts/8.jpg)
 
 
 

@@ -2,6 +2,8 @@
 
 ![v2](asserts/v2.png)
 
+![anim](asserts/anim.gif)
+
 This project is developed using Tuya SDK,which enables you to quickly develop branded apps connecting and controlling smart scenarios of many devices.
 
 For more information,please check [Tuya Developer Website](https://developer.tuya.com/).
@@ -18,7 +20,7 @@ For more information,please check [Tuya Developer Website](https://developer.tuy
 
 ## Video
 
-[BiliBIli](https://space.bilibili.com/204526879)
+[BiliBIli](https://www.bilibili.com/video/BV18K4y1p78z)
 
 
 
@@ -52,7 +54,15 @@ VS Code + PlatformIO + Arduino
 
 ![2](asserts/2.png)
 
+![4](asserts/4.jpg)
 
+![5](asserts/5.jpg)
+
+![6](asserts/6.jpg)
+
+![7](asserts/7.jpg)
+
+![8](asserts/8.jpg)
 
 ## License
 
